@@ -1,0 +1,12 @@
+#blockGrid{
+    display: inline-block;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: black;
+    width: 25px;
+    height: 25px;
+}
+#mainGridContainer{
+    display: flex;
+    
+}
