@@ -1,12 +1,26 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
 #blockGrid{
     display: inline-block;
     border-style: solid;
     border-radius: 5px;
     border-color: black;
-    width: 25px;
-    height: 25px;
+    height: 20px;
+    width: 20px;
+    margin: 2px;
+    justify-content: center;
+    align-self: center;
+
 }
-#mainGridContainer{
-    display: flex;
-    
+#gridContainer {
+    margin: 0 auto;
+    display: block;
+    height: 500px;
+    width: 500px;
+    align-self: center;
+    justify-content: center;
+
 }
