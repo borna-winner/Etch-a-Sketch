@@ -6,11 +6,11 @@ html,body{
 #blockGrid{
     display: inline-block;
     border-style: solid;
-    border-radius: 5px;
+    border-radius: 2.5px;
     border-color: black;
-    height: 20px;
-    width: 20px;
-    margin: 2px;
+    height: 21px;
+    width: 21px;
+    margin: 1px;
     justify-content: center;
     align-self: center;
 
@@ -23,4 +23,7 @@ html,body{
     align-self: center;
     justify-content: center;
 
+}
+.colorpad{
+    background-color: white;
 }

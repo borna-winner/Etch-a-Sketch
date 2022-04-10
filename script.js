@@ -1,14 +1,35 @@
-////make gridContainer useable, 
+// eslint-disable-next-line prettier/prettier
+// make gridContainer useable, 
 const gridContainer = document.querySelector("#gridContainer"); 
-const body = document.body;
+const divColor = document.querySelectorAll("#divBlock");
+
 function createGrid(){
-    for(let i = 0; i<255; i++){    
-    ////create div with id and classname on variable(div)
-        let divBlock = document.createElement('div');
+    for(let i = 0; i<255; i += 1){    
+    // create div with id and classname on variable(div)
+        const divBlock = document.createElement('div');
         divBlock.id = 'blockGrid';
-        divBlock.className = 'block';
-        ///make div a child of gridContainer
+        divBlock.className = 'colorpad';
         gridContainer.append(divBlock);
     }
 }
-createGrid()        
+createGrid()
+function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i += 1) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
+  
+function setRandomColor() {
+    for(let i = 0; i <255; i += 1){
+
+        let colorPad = document.getElementsByName("colorpad").css("background-color", getRandomColor());
+
+    }
+}
+
+divColor.addEventListener("mouseover",(setRandomColor()));
+
+
