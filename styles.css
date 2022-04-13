@@ -1,29 +1,26 @@
-html,body{
-    height: 100%;
-    width: 100%;
-    display: flex;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
 }
-#blockGrid{
-    display: inline-block;
-    border-style: solid;
-    border-radius: 2.5px;
-    border-color: black;
-    height: 21px;
-    width: 21px;
-    margin: 1px;
-    justify-content: center;
-    align-self: center;
 
+.blockGrid {
+  display: inline-block;
+  border-style: solid;
+  border-radius: 2.5px;
+  border-color: black;
+  height: 21px;
+  width: 21px;
+  margin: 0px;
+  justify-content: center;
+  align-self: center;
 }
 #gridContainer {
-    margin: 0 auto;
-    display: block;
-    height: 500px;
-    width: 500px;
-    align-self: center;
-    justify-content: center;
-
-}
-.colorpad{
-    background-color: white;
+  margin: 0 auto;
+  display: block;
+  height: 500px;
+  width: 500px;
+  align-self: center;
+  justify-content: center;
 }
