@@ -1,6 +1,6 @@
 const gridContainer = document.querySelector("#gridContainer");
 function createGrid(){
-    for(let i = 0; i<266; i += 1){    
+    for(let i = 0; i<312; i += 1){    
     // create div with id and classname on variable(div)
         let divBlock = document.createElement('div');
         divBlock.className = 'blockGrid';
@@ -8,27 +8,27 @@ function createGrid(){
 }
 }
 createGrid()
-
 function addEvent(){
-  const squares = document.querySelectorAll('.blockGrid');
+  let squares = document.querySelectorAll('.blockGrid');
   squares.forEach(squares => squares.addEventListener('mouseover', changeColor));
-
-
-
 }
 addEvent()
-
-let elements = document.getElementsByClassName('blockGrid');
-
-
-for (let i = 0; i < elements.length; ++i) {
- elements[i].addEventListener('mouseover', changeColor)  
-}
-
 function changeColor() {
     this.style.backgroundColor = color[Math.floor(Math.random() * color.length)];
+} 
+////////////////////////////////////////////
+//let clearBoardButton have a reactive click
+let clearBoardButton = document.getElementById("restartButton");
+let squares = document.querySelectorAll('.blockGrid');
+function clearBoardEnable(){
+  clearBoardButton.addEventListener('click', clearBoard);
 }
-var color = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6', 
+clearBoardEnable();
+function clearBoard(){
+  squares.style.backgroundColor = "#20B2AA";
+}
+
+let color = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6', 
 		  '#E6B333', '#3366E6', '#999966', '#99FF99', '#B34D4D',
 		  '#80B300', '#809900', '#E6B3B3', '#6680B3', '#66991A', 
 		  '#FF99E6', '#CCFF1A', '#FF1A66', '#E6331A', '#33FFCC',

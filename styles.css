@@ -3,12 +3,13 @@ body {
   height: 100%;
   width: 100%;
   display: flex;
+  flex-direction: column;
+  background-color: lightseagreen;
 }
 
 .blockGrid {
   display: inline-block;
   border-style: solid;
-  border-radius: 2.5px;
   border-color: black;
   height: 21px;
   width: 21px;
@@ -18,9 +19,33 @@ body {
 }
 #gridContainer {
   margin: 0 auto;
+  line-height: 0;
   display: block;
-  height: 500px;
-  width: 500px;
+  height: 300px;
+  width: 640px;
   align-self: center;
   justify-content: center;
+  align-items: center;
+}
+#helloContainer {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-size: 32px;
+}
+#messageContainer {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-size: 24px;
+}
+.blankSpace {
+  display: flex;
+  margin: 25px;
+}
+#restartButton {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-size: 24px;
 }
